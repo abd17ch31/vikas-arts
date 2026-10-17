@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { businessData } from '../data/businessData';
-import logo from '../assets/images/logo/c39ad922-2908-43a4-bbb7-47d652f847cd-removebg-preview.png';
+import logo from '../assets/images/Logo/c39ad922-2908-43a4-bbb7-47d652f847cd-removebg-preview.png';
 
 const navItems = [
   { name: 'Home', href: '#home' },

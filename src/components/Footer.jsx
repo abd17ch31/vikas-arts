@@ -1,6 +1,6 @@
 import { Phone, Instagram, MapPin, Clock, ShieldCheck, ChevronRight, MessageCircle } from 'lucide-react';
 import { footerData } from '../data/finalCtaData';
-import logo from '../assets/images/logo/c39ad922-2908-43a4-bbb7-47d652f847cd-removebg-preview.png';
+import logo from '../assets/images/Logo/c39ad922-2908-43a4-bbb7-47d652f847cd-removebg-preview.png';
 
 /**
  * Section 10 - Part 2: Premium Dark Burgundy Website Footer
