@@ -1,7 +1,7 @@
-import heroBridalPrep from '../assets/images/hero_bridal_prep_1791791395732.jpg';
-import heroMehndiHands from '../assets/images/hero_mehndi_hands_1791791412241.jpg';
-import heroBrideMehndi from '../assets/images/hero_bride_mehndi_1791791425667.jpg';
-import heroWeddingScene from '../assets/images/hero_wedding_scene_1791791440485.jpg';
+import heroBridalPrep from '../assets/images/homepage/image1.png';
+import heroMehndiHands from '../assets/images/homepage/image.png';
+import heroBrideMehndi from '../assets/images/homepage/image2.png';
+import heroWeddingScene from '../assets/images/homepage/image3.png';
 
 import catPortraitMehndi from '../assets/images/cat_portrait_mehndi_1791792921303.jpg';
 import catBridalMehndi from '../assets/images/cat_bridal_mehndi_1791792933575.jpg';
@@ -13,7 +13,7 @@ import pkgPremiumBridal from '../assets/images/pkg_premium_bridal_1791795205223.
 import pkgSignatureBridal from '../assets/images/pkg_signature_bridal_1791795218611.jpg';
 import pkgRoyalBridal from '../assets/images/pkg_royal_bridal_1791795230356.jpg';
 
-import journeyHeroIllustration from '../assets/images/journey_hero_illustration_1791801664352.jpg';
+import journeyHeroIllustration from '../assets/images/homepage/Krishna’s Flute by the River.png';
 import step1DivineBlessings from '../assets/images/step1_divine_blessings_1791801679244.jpg';
 import step2PureHennaLeaves from '../assets/images/step2_pure_henna_leaves_1791801690645.jpg';
 import step3BlessedHennaBlend from '../assets/images/step3_blessed_henna_blend_1791801707980.jpg';
