@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { Plus, Check } from 'lucide-react';
 
 /**
- * Compact Gallery Card for 100-Image Luxury Portfolio
+ * Compact Gallery Card for the mehndi portfolio
  * Features an independent + selection toggle and full-card lightbox click trigger.
  */
 function GalleryCard({
@@ -45,9 +45,6 @@ function GalleryCard({
           className="w-full h-full object-cover transition-transform duration-600 ease-out group-hover:scale-[1.04]"
         />
 
-        {/* Subtle Ambient Vignette on hover */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#3A1017]/70 via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-
         {/* Top-Right Plus/Check Selection Button */}
         <button
           type="button"
@@ -71,22 +68,6 @@ function GalleryCard({
           )}
         </button>
 
-        {/* Category Pill Tag (Top Left) */}
-        <div className="absolute top-2 left-2 z-10 pointer-events-none">
-          <span className="text-[9px] sm:text-[10px] uppercase tracking-wider font-semibold px-2 py-0.5 rounded-full bg-[#3A1017]/75 backdrop-blur-xs text-[#E9D8B8] border border-[#E9D8B8]/30">
-            {item.category}
-          </span>
-        </div>
-
-        {/* Bottom Card Title Overlay on Desktop & Touch */}
-        <div className="absolute inset-x-0 bottom-0 p-2.5 sm:p-3 pointer-events-none transform translate-y-1 group-hover:translate-y-0 transition-transform duration-300">
-          <p className="font-serif text-xs sm:text-sm text-[#FFFDF9] font-medium leading-snug drop-shadow-md line-clamp-1">
-            {item.title}
-          </p>
-          <span className="text-[9px] font-sans tracking-widest uppercase text-[#E9D8B8] opacity-90 drop-shadow-sm">
-            #{item.id}
-          </span>
-        </div>
       </div>
     </article>
   );

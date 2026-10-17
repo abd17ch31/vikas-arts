@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { businessData } from '../data/businessData';
+import logo from '../assets/images/logo/c39ad922-2908-43a4-bbb7-47d652f847cd-removebg-preview.png';
 
 const navItems = [
   { name: 'Home', href: '#home' },
@@ -133,27 +134,24 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out ${
         mobileMenuOpen
-          ? 'bg-[#3A1017] border-b border-[#E9D8B8]/30 shadow-2xl py-3 sm:py-3.5'
+          ? 'bg-[#3A1017] border-b border-[#E9D8B8]/30 shadow-2xl'
           : isLightBg
-          ? 'bg-[#F5EEE6]/95 backdrop-blur-md border-b border-[#E9D8B8]/60 shadow-[0_4px_20px_rgba(58,16,23,0.06)] py-3 sm:py-3.5'
-          : 'bg-transparent border-b border-white/10 py-4 sm:py-5'
+          ? 'bg-[#F5EEE6]/95 backdrop-blur-md border-b border-[#E9D8B8]/60 shadow-[0_4px_20px_rgba(58,16,23,0.06)]'
+          : 'bg-transparent border-b border-white/10'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Wordmark Logo */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
         <a
           href="#home"
           onClick={handleLogoClick}
-          className={`font-serif text-xl sm:text-2xl font-bold tracking-wider transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A15A] rounded px-1 ${
-            mobileMenuOpen
-              ? 'text-[#F5EEE6]'
-              : isLightBg
-              ? 'text-[#541820]'
-              : 'text-[#F5EEE6]'
-          }`}
+          className="h-full max-w-[5rem] sm:max-w-[6rem] flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A15A] rounded"
           aria-label={`${businessData.name} - Return to homepage`}
         >
-          {businessData.name}
+          <img
+            src={logo}
+            alt={`${businessData.name} logo`}
+            className="h-full w-auto object-contain"
+          />
         </a>
 
         {/* Desktop Navigation Links */}

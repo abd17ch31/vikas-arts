@@ -3,7 +3,7 @@ import HeartDivider from '../components/HeartDivider';
 import AboutFounders from '../sections/AboutFounders';
 import AboutPromise from '../sections/AboutPromise';
 import AboutGratitude from '../sections/AboutGratitude';
-import journeyHeroIllustration from '../assets/images/journey_hero_illustration_1791801664352.jpg';
+import aboutImage from '../assets/images/about/image.png';
 import { MapPin, Award, Sparkles, Heart } from 'lucide-react';
 
 /**
@@ -50,19 +50,13 @@ export default function AboutPage({ onNavigateHome, onBookConsultation }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center bg-[#FFFCF8] rounded-2xl border border-[#E9D8B8] shadow-[0_6px_24px_rgba(74,16,26,0.04)] p-6 sm:p-10 lg:p-12">
           {/* Devotional / Artisanal Illustrated Artwork */}
           <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-[340px] aspect-[4/5] rounded-xl overflow-hidden border border-[#E9D8B8] shadow-md bg-[#F5EEE6]">
+            <div className="relative w-full max-w-[340px] aspect-[3/5] rounded-xl overflow-hidden border border-[#E9D8B8] shadow-md bg-[#F5EEE6]">
               <img
-                src={journeyHeroIllustration}
-                alt="Sacred bridal and devotional henna art illustration inspired by Radha Rani and classical Vrindavan motifs"
-                className="w-full h-full object-cover"
+                src={aboutImage}
+                alt="Vikash Mehndi Art team receiving a certificate"
+                className="w-full h-full object-cover object-center"
                 loading="eager"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#4A101A]/60 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-3 inset-x-3 text-center">
-                <span className="text-[10px] font-sans uppercase tracking-[0.2em] font-semibold text-[#E9D8B8] bg-[#3A1017]/80 backdrop-blur-xs px-3 py-1 rounded-full border border-[#E9D8B8]/30">
-                  Jaipur · Since Inception
-                </span>
-              </div>
             </div>
           </div>
 

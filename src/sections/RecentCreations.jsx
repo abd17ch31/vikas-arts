@@ -127,7 +127,7 @@ export default function RecentCreations({ onNavigateGallery }) {
             onClick={onNavigateGallery}
             className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded text-xs font-semibold uppercase tracking-[0.18em] transition-all duration-300 bg-[#541820] text-[#FFFDF9] hover:bg-[#3A1017] hover:shadow-lg border border-[#C5A15A]/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A15A]"
           >
-            <span>Explore All 100+ Mehndi Designs</span>
+            <span>Explore All Mehndi Designs</span>
             <span className="text-[#E9D8B8]" aria-hidden="true">→</span>
           </button>
         </div>
@@ -135,4 +135,3 @@ export default function RecentCreations({ onNavigateGallery }) {
     </section>
   );
 }
-

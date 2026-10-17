@@ -1,5 +1,6 @@
 import { Phone, Instagram, MapPin, Clock, ShieldCheck, ChevronRight, MessageCircle } from 'lucide-react';
 import { footerData } from '../data/finalCtaData';
+import logo from '../assets/images/logo/c39ad922-2908-43a4-bbb7-47d652f847cd-removebg-preview.png';
 
 /**
  * Section 10 - Part 2: Premium Dark Burgundy Website Footer
@@ -26,28 +27,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-14 border-b border-[#D4AF37]/15">
           {/* Column 1: Monogram Brand & Atelier Story (5 cols on lg) */}
           <div className="lg:col-span-5 flex flex-col items-start space-y-5">
-            {/* Logo and Atelier Name */}
+            {/* Brand Logo */}
             <a
               href="#home"
-              className="group inline-flex items-center gap-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-lg p-1 -m-1"
+              className="group inline-flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-lg p-1 -m-1"
               aria-label="Vikash Mehndi Art - Return to top"
             >
-              <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden border border-[#D4AF37]/50 shadow-[0_0_16px_rgba(212,175,55,0.25)] group-hover:border-[#E5C988] transition-colors shrink-0">
-                <img
-                  src={footerData.logo.image}
-                  alt={footerData.logo.alt}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <div className="flex flex-col text-left">
-                <span className="font-serif text-xl sm:text-2xl font-bold tracking-wider text-[#FFF8F0] group-hover:text-[#E5C988] transition-colors leading-tight">
-                  {footerData.logo.title}
-                </span>
-                <span className="text-[10px] sm:text-[11px] font-sans font-medium tracking-[0.24em] uppercase text-[#D4AF37]">
-                  {footerData.logo.subtitle}
-                </span>
-              </div>
+              <img
+                src={logo}
+                alt="Vikash Bridal Mehndi logo"
+                className="w-28 h-28 sm:w-36 sm:h-36 object-contain"
+                loading="lazy"
+              />
             </a>
 
             {/* Brand Philosophy Narrative */}
